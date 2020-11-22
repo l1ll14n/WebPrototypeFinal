@@ -1,0 +1,99 @@
+/*Base Styles*/
+html {
+	scroll-behavior: smooth;
+	font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Grid Setup for Role Discovery*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 3px 3px;
+  grid-template-areas:
+    "logo logo nav nav nav nav nav nav nav nav title title"
+    "Header Header Header Header Header Header Header Header Header Header Header Header"
+    "sbuttons sbuttons sbuttons sbuttons sbuttons sbuttons sbuttons sbuttons sbuttons sbuttons sbuttons sbuttons"
+    ". results results results results results results results results results results ."
+    ". results results results results results results results results results results ."
+    ". results results results results results results results results results results ."
+    ". results results results results results results results results results results ."
+    ". results results results results results results results results results results ."
+    ". results results results results results results results results results results ."
+    ". results results results results results results results results results results ."
+    "Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons Nbuttons"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+.nav { grid-area: nav; }
+.logo { grid-area: logo; }
+.title { grid-area: title; }
+.Header { grid-area: Header; }
+.Nbuttons { grid-area: Nbuttons; }
+.footer { grid-area: footer; }
+.sbuttons { grid-area: sbuttons; }
+.results { grid-area: results; }
+
+
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  grid-area: nav;
+  padding: 0;
+  overflow: hidden;
+  background-color: #15749E;
+  position: fixed;
+  top: -20px;
+  left: 25%;
+  width: 8fr;
+}
+
+li {
+  float: left;
+}
+
+nav ul li.previous {
+  background-color: #7EC971;
+}
+
+nav ul li.active {
+  background-color: #009CCC;
+}
+
+nav ul li.future {
+  background-color: #15749E;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: #15749E;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 860px) {
+  /*hides element labeled as step (see nav section)*/
+	nav span.step {
+		display: none;
+	}
+  /*center the nav bar on mobile devices*/
+  nav ul{
+    position: fixed;
+    left: 18%;
+  }
+}

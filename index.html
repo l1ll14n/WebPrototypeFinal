@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- reference for style sheet div classes
+<div class="grid-container">
+  <div class="nav"></div>
+  <div class="image"></div>
+  <div class="logo"></div>
+  <div class="title"></div>
+  <div class="header"></div>
+  <div class="main"></div>
+  <div class="Nbutton"></div>
+  <div class="footer"></div>
+</div>
+-->
+
+<html>
+  <head>
+    <link rel="icon"
+    type="image/ico"
+    href="https://www.rspcansw.org.au/wp-content/themes/rspcansw/img/icons/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WebPrototypeIntroduction</title>
+    <link href="indexstyle.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!--Nav setup-->
+    <div class:"nav">
+      <nav>
+        <ul>
+          <!--for each class (previous, active, future) add the corresponding class to the page currently active and the ones previous and future-->
+          <!-- put class=step-num and class=step so in style.css step class can be removed in mobile for a more condensed version of the nav bar that can then be used as the progress bar and nav bar combined-->
+          <li class="active">
+            <a href="index.html">
+              <span class="step-num">1. </span>
+              <span class="step">Introduction</span>
+            </a>
+          </li>
+          <!--For each page to connect, add href="filename.html" in the a tag-->
+          <li class="future">
+            <a href="step2.html">
+              <span class="step-num">2. </span>
+              <span class="step">Contact Details</span>
+            </a>
+          </li>
+          <li class="future">
+            <a href="step3.html">
+              <span class="step-num">3. </span>
+              <span class="step">Role Discovery</span>
+            </a>
+          </li>
+          <li class="future">
+            <a href="step4.html">
+              <span class="step-num">4. </span>
+              <span class="step">Training Signup</span>
+            </a>
+          </li>
+          <li class="future">
+            <a href="step5.html">
+              <span class="step-num">5. </span>
+              <span class="step">Next Steps</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+  </body>
+</html>
