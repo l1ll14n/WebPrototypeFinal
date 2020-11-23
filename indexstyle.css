@@ -15,7 +15,7 @@ html {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 3px 3px;
   grid-template-areas:
-    "logo logo nav nav nav nav nav nav nav nav title title"
+    "title title nav nav nav nav nav nav nav nav logo logo"
     "image image image image image image image image image image image image"
     "image image image image image image image image image image image image"
     "header header header header header header header header header header header header"
@@ -37,12 +37,23 @@ html {
 .Nbutton { grid-area: Nbutton; }
 .footer { grid-area: footer; }
 
+/* Title */
+
+.title {
+  text-align: left;
+}
+
+div.title {
+  grid-area: title;
+  
+}
+
 /* Navigation bar */
-nav {
+.nav {
   text-align: center;
 }
 
-nav ul {
+.nav ul {
   list-style-type: none;
   grid-area: nav;
   padding: 0;
@@ -53,19 +64,19 @@ nav ul {
   top: -25px;
 }
 
-nav li {
+.nav li {
   float: left;
 }
 
-nav ul li.previous {
+.nav ul li.previous {
   background-color: #7EC971;
 }
 
-nav ul li.active {
+.nav ul li.active {
   background-color: #009CCC;
 }
 
-nav ul li.future {
+.nav ul li.future {
   background-color: #15749E;
 }
 
@@ -91,7 +102,7 @@ li a:hover {
 .pbcontainer {
   background-color: lightgrey; 
   height: 20px;
-  width: 40%;
+  width: 673px;
   margin: -45px auto;
 }
 
@@ -103,14 +114,33 @@ li a:hover {
   font-size: 15px; 
 }
 
+/*Logo*/
+.logo {
+  grid-area: logo;
+}
+
+div.logo img{
+  float: right;
+  position: relative;
+  margin: -30px 0px 0px 0px;
+  width: 100px;
+  height: 25px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 860px) {
   /*hides element labeled as step (see nav section)*/
-	nav span.step {
+	.nav span.step {
 		display: none;
 	}
   .pbcontainer {
-
+    width: 200px;
+  }
+  div.logo figure img{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    margin: -3% -42px 0px 0px;
   }
 }
