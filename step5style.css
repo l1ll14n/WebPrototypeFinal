@@ -38,12 +38,23 @@ html {
 .header2 { grid-area: header2; }
 .main2 { grid-area: main2; }
 
+/* Title */
+.title h2{
+  text-align: center;
+  float: left;
+  padding: 20.5px 24px;
+  background-color: #15749E;
+  color: white;
+  position: relative;
+  margin: -40px 0px 0px -10px;
+}
+
 /* Navigation bar */
-nav {
+.nav {
   text-align: center;
 }
 
-nav ul {
+.nav ul {
   list-style-type: none;
   grid-area: nav;
   padding: 0;
@@ -54,19 +65,19 @@ nav ul {
   top: -25px;
 }
 
-nav li {
+.nav li {
   float: left;
 }
 
-nav ul li.previous {
+.nav ul li.previous {
   background-color: #7EC971;
 }
 
-nav ul li.active {
+.nav ul li.active {
   background-color: #009CCC;
 }
 
-nav ul li.future {
+.nav ul li.future {
   background-color: #15749E;
 }
 
@@ -92,7 +103,7 @@ li a:hover {
 .pbcontainer {
   background-color: lightgrey; 
   height: 20px;
-  width: 673px;
+  width: 672.5px;
   margin: -45px auto;
 }
 
@@ -104,14 +115,8 @@ li a:hover {
   font-size: 15px; 
 }
 
-/* Media Queries */
-
 /*Logo*/
-.logo {
-  grid-area: logo;
-}
-
-div.logo img{
+.logo img{
   float: right;
   position: relative;
   margin: -30px 0px 0px 0px;
@@ -123,13 +128,19 @@ div.logo img{
 
 @media screen and (max-width: 860px) {
   /*hides element labeled as step (see nav section)*/
+  .title h2{
+  padding: 19.5px 5px;
+  position: relative;
+  margin: -40px 0px 0px -10px;
+  font-size: 60%;
+  }
 	.nav span.step {
 		display: none;
 	}
   .pbcontainer {
     width: 200px;
   }
-  div.logo figure img{
+  .logo figure img{
     position: relative;
     width: 20%;
     height: 20%;
