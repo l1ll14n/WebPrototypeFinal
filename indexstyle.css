@@ -122,18 +122,18 @@ li a:hover {
   float: right;
   position: relative;
   padding: 5px 5px;
-  margin: -35px 2.5% 0px 0px;
-  width: 8%;
+  margin: -10px 2.5% 0px 0px;
+  width: 125px;
 }
 
 /*Image*/
+.image {
+  float: right;
+}
 .image img{
-  float: center;
   position: relative;
-  padding: 0px;
-  overflow: hidden;
-  margin: 0px 0px 0px -50px;
-  width: 100%;
+  float: right;
+  width: 105%;
 }
 
 /*Header*/
@@ -152,9 +152,9 @@ li a:hover {
 @media screen and (max-width: 860px) {
   /*hides element labeled as step (see nav section)*/
   .title h2 {
-    padding: 29.5px 5px;
+    padding: 28.5px 5px;
     position: relative;
-    margin: -40px 0px 0px -10px;
+    margin: -10px 0px 0px -10px;
     font-size: 60%;
   }
 	.nav span.step {
@@ -165,8 +165,8 @@ li a:hover {
   }
   .logo img{
     position: relative;
-    width: 25%;
-    margin: -5% -22% 0% 0%;
+    width: 65px;
+    margin: -10px -18.5px 0px 0px;
   }
   .image img{
     position: relative;
