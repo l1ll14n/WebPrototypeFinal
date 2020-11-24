@@ -45,7 +45,7 @@ html {
   background-color: #15749E;
   color: white;
   position: relative;
-  margin: -40px 0px 0px -10px;
+  margin: -18px 0px 0px -10px; 
 }
 
 /* Navigation bar */
@@ -91,6 +91,9 @@ li a {
 li a:hover {
   background-color: white;
   color: #15749E;
+  font-size: 120%;
+  padding: 12px 12.5px;
+  transition: all ease-in-out 50ms;
 }
 
 .active {
@@ -118,17 +121,38 @@ li a:hover {
 .logo img{
   float: right;
   position: relative;
-  margin: -30px 0px 0px 0px;
-  width: 100px;
-  height: 25px;
+  padding: 5px 5px;
+  margin: -35px 2.5% 0px 0px;
+  width: 8%;
+}
+
+/*Image*/
+.image img{
+  float: center;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+  margin: 0px 0px 0px -50px;
+  width: 100%;
+}
+
+/*Header*/
+.header {
+  width: 100%;
+}
+.header h1{
+  grid-area: header;
+  background-color: #009CCC;
+  padding: 1rem 1rem;
+  /* margin: auto; */
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 860px) {
   /*hides element labeled as step (see nav section)*/
-  .title h2{
-    padding: 19.5px 5px;
+  .title h2 {
+    padding: 29.5px 5px;
     position: relative;
     margin: -40px 0px 0px -10px;
     font-size: 60%;
@@ -139,10 +163,14 @@ li a:hover {
   .pbcontainer {
     width: 200px;
   }
-  .logo figure img{
+  .logo img{
     position: relative;
-    width: 20%;
-    height: 20%;
-    margin: -3% -42px 0px 0px;
+    width: 25%;
+    margin: -5% -22% 0% 0%;
+  }
+  .image img{
+    position: relative;
+    width: 144%;
+    margin: 0px 0px 0px -50px;
   }
 }
