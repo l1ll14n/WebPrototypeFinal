@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width">
     <title>Volunteer at RSPCA NSW</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -65,12 +67,15 @@
     </div>
 
     <!--logo setup-->
-    <div class="logo">
-      <figure>
-        <img src="Images/rspcansw.jpg" alt="RSPCALogo" 
-        style="width: 100px height: 50px">
-      </figure>
-    </div>
+    <!--referenced from: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_target-->
+    <a href="https://www.rspcansw.org.au/" target="_blank">
+      <div class="logo">
+        <figure>
+          <img src="Images/rspcansw.jpg" alt="RSPCALogo" 
+          style="width: 100px height: 50px">
+        </figure>
+      </div>
+    </a>
     
     <!--Homepage image-->
     <div class="HomeImage">
@@ -83,6 +88,25 @@
         How to become a volunteer for the RSPCA NSW
       </h1>
     </div>
+
+    <h3>
+      <ul>
+        <div class="numberCircle">1</div>
+        <li>Learn about how you can become a volunteer for RSPCA NSW.</li>
+        <div class="numberCircle">2</div>
+        <li>Enter your contact details and upload your CV in order for RSPCA to get in touch with you.</li>
+        <div class="numberCircle">3</div>
+        <li>Choose the volunteer roles that are right for you, using location, interest/specialty, and time commitment.</li>
+        <div class="numberCircle">4</div>
+        <li>Sign up for (and subsequently complete) the inductions and in-person training required for the roles you're interested in.</li>
+        <div class="numberCircle">5</div>
+        <li>Show up for your first day of volunteering with RSPCA NSW!</li>
+      </ul>
+    </h3>
+
+    <a href="step2.html">
+      <button type="button">Click Me!</button>
+    </a>
 
   </body>
 </html>
