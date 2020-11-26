@@ -630,9 +630,9 @@ form p.p1{
   }
   /* Page 2 */
   .title2 h2{
-    padding: 19.5px 8px;
+    padding: 19.5px 6px;
     position: relative;
-    margin: -12px 0px 0px -14px;
+    margin: -12px 0px 0px -10px;
     font-size: 80%;
   }
   .header2 h1{
@@ -640,43 +640,40 @@ form p.p1{
     padding: 10px 20px;
     font-size: 1.25rem;
   }
-/* Narrow Roles By: dropdown menu */
-.dropbtn {
-  width: 150px;
-}
-.dropdown {
-  width: 150px;
-}
-.dropdown-content {
-  width: 150px;
-}
-.dropdown-content a {
-  width: 150px;
-}
-.dropcheck {
-  margin: -1em 0 0 3.75em;
-}
-/* List of Roles */
-.rolelist {
-  width: 250px;
-  margin: 0 0 0 -4em;
-}
-
-.rolelist h3 ul li input {
-  display: block;
-  padding: 0;
-  margin: 1.5em 0 0 -22em;
-}
-
-.rolelist h3 ul li{
-  display: block;
-  padding: .5em;
-  margin: -20px -22em 0 2em;
-}
-
-.rolelist h3 ul li:last-of-type {
-  margin-bottom: 1em;
-}
+  /* Narrow Roles By: dropdown menu */
+  .dropbtn {
+    width: 150px;
+  }
+  .dropdown {
+    width: 150px;
+  }
+  .dropdown-content {
+    width: 150px;
+  }
+  .dropdown-content a {
+    width: 150px;
+  }
+  .dropcheck {
+    margin: -1em 0 0 3.75em;
+  }
+  /* List of Roles */
+  .rolelist {
+    width: 5em;
+    margin-left: 70%;
+  }
+  .rolelist h3 ul li input {
+    display: block;
+    padding: 10px;
+    margin: 0em 0 0 -5em;
+  }
+  .rolelist h3 ul li{
+    display: block;
+    padding: 15px 15px;
+    margin: -2.1em 0 0 -12em;
+  }
+  .rolelist h3 ul li:last-of-type {
+    margin-bottom: 1em;
+  }
   /* Page 3 */
   .title3 h2{
     padding: 19.5px 6.5px;
