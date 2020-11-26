@@ -84,5 +84,31 @@
       </h1>
     </div>
 
+    <!-- Form with action that does nothing (the data isn't sent anywhere) -->
+    <!-- form referenced from:https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_form_action, https://www.w3schools.com/howto/howto_html_file_upload_button.asp -->
+    <form action="step2.html">
+      <label for="firstname"></label>
+      <input type="text" id="firstname" name="fname" value="Given Name">
+      <label for="lastname"></label>
+      <input type="text" id="lname" name="lname" value="Surname">
+      <input type="date" id="birthday" name="bday"
+      value="xxxx-xx-xx"
+      min="2004-11-26" max="2018-12-31">
+      <p id class="p1">Upload your CV (for reference of previous experience)</p>
+      <input type="file" id="cv" name="filename">
+      <input class="submit" type="submit" value="Submit">
+    </form> 
+
+    <div class="buttonnavcontainer">
+      <a href="index.html" class="previouspage">< <span class="bnavtag">Previous</span>
+      </a>
+      <a href="step3.html" class="nextpage1"><span class="bnavtag">Next</span> >
+      </a>
+    </div>
+
+    <a href="https://www.rspcansw.org.au/wp-content/uploads/2020/07/RSPCA-NSW-Volunteer-FAQ-24-07-2020.pdf" target="_blank" class="faqlink">FAQ
+    </a>
+
+
   </body>
 </html>

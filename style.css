@@ -8,12 +8,12 @@ html {
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, p {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 
-/* All Pages 
+/* All Pages/Common to many pages 
 
 -------------------------------------------------
 
@@ -69,9 +69,9 @@ li a {
 li a:hover {
   background-color: white;
   color: #15749E;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem;
   padding: 13px 14px;
-  transition: ease-in-out 80ms;
+  transition: ease-in-out 80ms; */
 }
 
 .active {
@@ -104,7 +104,10 @@ li a:hover {
   height: 25px;
 }
 
-/* Next Page link button */
+/* button styling referenced from: https://fdossena.com/?p=html5cool/buttons/i.frag */
+
+
+/* Next Page link button (Main page) */
 .nextpage {
   display: block; 
   position: relative;
@@ -122,7 +125,73 @@ li a:hover {
   text-align: center;
 }
 
+.nextpage:hover{
+  background-color: white;
+  color: #7EC971;
+  border: 3px solid #7EC971;
+  padding: 0.15em 0.2em;
+  transition: ease-in-out 80ms;
+}
+
+.buttonnavcontainer {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
 /* Previous Page link button */
+.previouspage {
+  display: inline-block; 
+  position: relative;
+  padding: 0.3em 0.3em;
+  width: 110px;
+  /* margin: auto; */
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color:white;
+  background-color: rgb(45, 114, 47);
+  text-align: center;
+}
+
+.previouspage:hover{
+  background-color: white;
+  color: #7EC971;
+  border: 3px solid #7EC971;
+  padding: 0.15em 0.15em;
+  transition: ease-in-out 80ms;
+}
+
+/* Next Page link button (rest of pages) */
+.nextpage1 {
+  display: inline-block; 
+  position: relative;
+  padding: 0.3em 0.5em;
+  width: 110px;
+  /* margin: auto;
+  margin-top: 20px; */
+  margin-left: 9em;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color:white;
+  background-color: rgb(45, 114, 47);
+  text-align: center;
+}
+
+.nextpage1:hover{
+  background-color: white;
+  color: #7EC971;
+  border: 3px solid #7EC971;
+  padding: 0.15em 0.2em;
+  transition: ease-in-out 80ms;
+}
 
 /* FAQ button */
 .faqlink{
@@ -140,6 +209,24 @@ li a:hover {
   background-color: #7EC971;
   text-align: center;
 }
+
+.faqlink:hover{
+  background-color: white;
+  color: #7EC971;
+  border: 3px solid #7EC971;
+  padding: 0.15em 0.2em;
+  transition: ease-in-out 80ms;
+}
+
+/* Footer */
+
+/* footer {
+  background-color: #15749E;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: .5em;
+} */
 
 
 /* Page 1 - Introduction
@@ -163,8 +250,8 @@ li a:hover {
 .HomeImage img{
   float: left;
   position: relative;
-  width: 101%;
-  margin: 0px 0px 0px -7px;
+  width: 102%;
+  margin: 0px 0px 0px -12px;
   padding: 0;
 }
 
@@ -174,8 +261,8 @@ li a:hover {
   text-align: center;
   background-color: #009CCC;
   color: white;
-  width: 101%;
-  margin: 0px 0px 0px -7px;
+  width: 102%;
+  margin: 0px 0px 0px -12px;
   font-size: 1.5rem;
   padding: 15px 0px;
 }
@@ -239,6 +326,56 @@ h3 ul li{
   margin: 0px 0px 0px -8px; 
   font-size: 1.5rem;
   padding: 15px 0px;
+}
+
+/* Form Styling */
+input {
+  display: block;
+  width: 50em;
+  margin: 1em auto 1em auto;
+  padding: 12px 20px;
+  border: 3px solid #009CCC;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #15749E;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+/* input:focus {
+  display: block;
+  width: 50em;
+  margin: 1em auto 1em auto;
+  padding: 12px 20px;
+  border: 3px solid #7EC971;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #7EC971;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+} */
+
+input.submit {
+  background-color: #7EC971;
+  color: white;
+  border: 3px solid #7EC971;
+  width: 10em;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+input.submit:hover {
+  background-color: white;
+  color: #7EC971;
+  border: 3px solid #7EC971;
+}
+
+form p.p1{
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  color: #15749E;
 }
 
 /* Page 3 - Discover Roles
@@ -393,6 +530,45 @@ h3 ul li{
     width: 106.5%;
     padding: 10px 20px;
     font-size: 1.25rem;
+  }
+  /* Form Styling */
+  input {
+    display: block;
+    width: 100%;
+    margin: 1em auto 1em auto;
+    padding: 12px 20px;
+    border: 3px solid #009CCC;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #15749E;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  /* input:focus {
+    display: block;
+    width: 100%;
+    margin: 1em auto 1em auto;
+    padding: 12px 20px;
+    border: 3px solid #7EC971;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #7EC971;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  } */
+  input.submit {
+    background-color: #7EC971;
+    color: white;
+    border: 3px solid #7EC971;
+    padding: 10px;
+    width: 6em;
+  }
+  form p.p1{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    color: #15749E;
   }
   /* Page 3 */
   .title3 h2{
