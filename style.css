@@ -106,9 +106,11 @@ li a:hover {
 
 /* Next Page link button */
 .nextpage {
-  display:inline-block;
-  padding:0.3em 1.2em;
-  margin:0 0.3em 0.3em 0;
+  display: block; 
+  position: relative;
+  padding: 0.3em 0.3em;
+  width: 200px;
+  margin: auto;
   border-radius: 2em;
   box-sizing: border-box;
   text-decoration: none;
@@ -124,9 +126,10 @@ li a:hover {
 
 /* FAQ button */
 .faqlink{
-  display:inline-block;
+  display: block;
   padding:0.3em 1.2em;
-  margin:0 0.3em 0.3em 0;
+  width: 100px;
+  margin: 20px auto;
   border-radius: 2em;
   box-sizing: border-box;
   text-decoration: none;
@@ -160,8 +163,8 @@ li a:hover {
 .HomeImage img{
   float: left;
   position: relative;
-  width: 103%;
-  margin: 0px 0px 0px -14.5px;
+  width: 101%;
+  margin: 0px 0px 0px -7px;
   padding: 0;
 }
 
@@ -171,8 +174,8 @@ li a:hover {
   text-align: center;
   background-color: #009CCC;
   color: white;
-  width: 102.5%;
-  margin: 0px 0px 0px -8px;
+  width: 101%;
+  margin: 0px 0px 0px -7px;
   font-size: 1.5rem;
   padding: 15px 0px;
 }
