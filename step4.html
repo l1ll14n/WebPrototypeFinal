@@ -9,7 +9,7 @@
     type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Volunteer for RSPCA NSW - Training and Induction Sign Up</title>
+    <title>Volunteering for RSPCA - Contact Details</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -20,12 +20,12 @@
     <div class="title4">
       <h2>
         <!-- used break to push "details" to the next line to fit better within the title element on mobile-->
-      Training </br> Signup
+      Contact </br> Details
       </h2>
-    </div>
+    </div>  
     
     <div class="nav">
-      <!--Nav setup-->
+    <!--Nav setup-->
       <nav>
         <ul>
           <!--for each class (previous, active, future) add the corresponding class to the page currently active and the ones previous and future-->
@@ -40,19 +40,19 @@
           <li class="previous">
             <a href="step2.html">
               <span class="step-num">2. </span>
-              <span class="step">Contact Details</span>
+              <span class="step">Role Discovery</span>
             </a>
           </li>
           <li class="previous">
             <a href="step3.html">
               <span class="step-num">3. </span>
-              <span class="step">Role Discovery</span>
+              <span class="step">Training Signup</span>
             </a>
           </li>
           <li class="active">
             <a href="step4.html">
               <span class="step-num">4. </span>
-              <span class="step">Training Signup</span>
+              <span class="step">Contact Details</span>
             </a>
           </li>
           <li class="future">
@@ -65,10 +65,10 @@
       </nav>
       <!-- progress bar -->
       <div class="pbcontainer">
-        <div class="pfinished" style="height:20px;width:80%">80%</div>
+        <div class="pfinished" style="height:20px;width:40%">40%</div>
       </div>
     </div>
-      
+
     <!--logo setup-->
     <div class="logo">
       <figure>
@@ -80,9 +80,36 @@
     <!--Page header-->
     <div class="header4">
       <h1>
-        Sign up for the inductions and in-person training for the roles you've chosen
+        Enter your contact details so RSPCA NSW can get in touch with you
       </h1>
     </div>
+
+    <!-- Form with action that does nothing (the data isn't sent anywhere) -->
+    <!-- form referenced from:https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_form_action, https://www.w3schools.com/howto/howto_html_file_upload_button.asp -->
+    <form action="step4.html">
+      <label for="firstname"></label>
+      <input type="text" id="firstname" name="fname" value="Given Name">
+      <label for="lastname"></label>
+      <input type="text" id="lname" name="lname" value="Surname">
+      <input type="date" id="birthday" name="bday"
+      value="xxxx-xx-xx"
+      min="2004-11-26" max="2018-12-31">
+      <p id class="p1">Upload your CV (references of relavant previous experience)</p>
+      <input type="file" id="cv" name="filename">
+      <input class="submit" type="submit" value="Submit">
+    </form> 
+
+    <!-- Nav buttons at bottom of page -->
+
+    <div class="buttonnavcontainer">
+      <a href="step3.html" class="previouspage">< <span class="bnavtag">Previous</span>
+      </a>
+      <a href="step5.html" class="nextpage1"><span class="bnavtag">Next</span> >
+      </a>
+    </div>
+
+    <a href="https://www.rspcansw.org.au/wp-content/uploads/2020/07/RSPCA-NSW-Volunteer-FAQ-24-07-2020.pdf" target="_blank" class="faqlink">FAQ
+    </a>
 
 
   </body>
