@@ -104,6 +104,41 @@ li a:hover {
   height: 25px;
 }
 
+/* Next Page link button */
+.nextpage {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color:white;
+  background-color: #7EC971;
+  text-align: center;
+}
+
+/* Previous Page link button */
+
+/* FAQ button */
+.faqlink{
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color:white;
+  background-color: #7EC971;
+  text-align: center;
+}
+
+
 /* Page 1 - Introduction
 
 -------------------------------------------------
@@ -158,14 +193,16 @@ ul {
   color: white;
   text-align: center;
 
-  font: 32px Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 h3 ul li{
   display: block;
   padding: 25px 25px;
   position: relative;
-  margin: -54px 15% 0px 20%;
+  margin: -56px 15% 0px 20%;
   /* referenced: https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/*/
   line-height: 1.5;
   color: #15749E;
@@ -297,6 +334,16 @@ h3 ul li{
     margin-right: -116.5px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold; 
+  }
+  .nav li{
+    padding: 0px 5.2px;
+  }
+  li a:hover {
+    background-color: white;
+    color: #15749E;
+    font-size: 1.1rem;
+    padding: 13px 8px;
+    transition: ease-in-out 80ms;
   }
   .pbcontainer {
     width: 200px;
